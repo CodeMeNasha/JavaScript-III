@@ -13,10 +13,21 @@
 
 // code example for Window Binding
 
+this
+
 // Principle 2
 
 // code example for Implicit Binding
 
+const oliveGarden = {
+    location: "Phoenix",
+    type: "Italian",
+    dish: "alfredo",
+    eat: function() {
+        return `My favorite type of ${this.type} food is at Olive Garden located in ${this.location} where I love to order ${this.dish}.`
+    }
+}
+console.log(oliveGarden.eat());
 // Principle 3
 
 // code example for New Binding
