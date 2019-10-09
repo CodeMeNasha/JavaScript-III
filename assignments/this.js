@@ -1,8 +1,8 @@
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. 
-* 2. 
+* 1. window binding - this applies to the entire thing
+* 2. explicit binding - most common. refers to what is to left of dot and used only in methods
 * 3. 
 * 4. 
 *
