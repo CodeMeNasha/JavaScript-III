@@ -2,9 +2,9 @@
 * in your own words. explain the four principle for the "this" keyword below.
 *
 * 1. window binding - this applies to the entire thing
-* 2. explicit binding - most common. refers to what is to left of dot and used only in methods
-* 3. 
-* 4. 
+* 2. implicit binding - most common. refers to what is to left of dot and used only in methods
+* 3. explicit binding - uses call, apply, or bind. this refers to whats in the ()'s in call and apply. apply is specific to arrays
+* 4. new binding-
 *
 * write out a code example of each explanation above
 */
@@ -35,3 +35,14 @@ console.log(oliveGarden.eat());
 // Principle 4
 
 // code example for Explicit Binding
+
+function world() {
+    console.log(this.city)
+}
+
+let favTravel = {
+    state: "California",
+    city: "San Diego",
+}
+
+world.call(favTravel);
