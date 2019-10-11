@@ -4,7 +4,7 @@
 * 1. window binding - this applies to the entire thing
 * 2. implicit binding - most common. refers to what is to left of dot and used only in methods
 * 3. explicit binding - uses call, apply, or bind. this refers to whats in the ()'s in call and apply. apply is specific to arrays
-* 4. new binding-
+* 4. new binding- constructs and points to a new object
 *
 * write out a code example of each explanation above
 */
@@ -31,6 +31,13 @@ console.log(oliveGarden.eat());
 // Principle 3
 
 // code example for New Binding
+
+function Food(favorites){
+    this.thingss = favorites;
+}
+let myFood = new Food("I love fruits");
+
+console.log(myFood.thingss);
 
 // Principle 4
 
